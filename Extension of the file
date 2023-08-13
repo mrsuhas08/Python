@@ -1,0 +1,12 @@
+def get_language(file_name):
+    extension = file_name.split('.')[-1].lower()
+    Dict = {
+        'py': 'Python',
+        'java': 'Java',
+        'cpp': 'C++',
+    }
+    return Dict.get(extension, 'Unknown')
+
+file_name = input("Enter the file name: ")
+output = get_language(file_name)
+print("The extension of the file is: ",output)￼Enter
